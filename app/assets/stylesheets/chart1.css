@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color:red;
+}
+
+#chart-container {
+    /* position: relative; */
+    height: 60vh;
+    /* display: inline-block; */
+    /* overflow: hidden; */
+}
+#chart-container-2{
+    height:60vh;
+    /* display: inline-block; */
+}
+
+#chart-container-3{
+    height:60vh;
+}
+
+#chart-container-5{
+    height:55vh;
+}

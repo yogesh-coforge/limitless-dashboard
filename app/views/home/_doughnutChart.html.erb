@@ -1,0 +1,10 @@
+<%= javascript_include_tag 'doughnutChart.js' %>
+<div id="doughnut" class="col-lg-3 mx-3 card", onload= doughnutChart() >
+    <h3 class="card-header d-sm-flex align-items-sm-center py-sm-0 py-sm-2 my-sm-1">Doughnut Graph
+        <span id="modename5" class="btn btn-primary mt-2 mt-sm-0 ms-sm-auto" onclick="dark5()">
+            <%= content_tag :i, nil, id: 'darkicon5', class: 'fas fa-life-ring me-2' %>
+            <span id="modetitle5">dark mode<span>
+        <span>
+    </h3>
+    <div id="chart-container-5" class="card-body p-0"></div>
+</div>

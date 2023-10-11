@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    
+    <!--script src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script-->
+    <%= javascript_include_tag 'chart1.js'%>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <%= javascript_include_tag 'barchart.js'%>
+    <%= javascript_include_tag 'piechart.js'%>
+    <%= javascript_include_tag 'half_doughnut.js'%>
+    <%= javascript_include_tag 'doughnutChart.js'%>
+
+  </head>
+
+  <body class="col-lg-12" onload="chart(), barchart(), piechart(), halfDoughnut(), doughnutChart()">
+    <%= render 'layouts/new_header' %>
+    <%= render 'layouts/sidebar' %>
+    <%= render 'layouts/pageheader' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>
